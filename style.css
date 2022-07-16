@@ -31,8 +31,9 @@ header{
     padding: 1rem 0;
 }
 header__img{
-    max-width: 100px;
+    max-width: 10px;
 }
+
 .menu{
     display: flex;
     gap: 2rem;
@@ -96,7 +97,8 @@ header__img{
 }
 .info__img  {
     flex: 1 1 50%;
-    }
+}
+
     .info__box {
         flex: 1 1 50%;
         display: flex;
@@ -107,10 +109,64 @@ header__img{
         font-size: 2rem; 
         font-family: 'Teko';
         color: black;
+        
     }
     .info__descripcion {
         font-size: 1rem;
-
+        animation-duration: 5s;
+        animation-name: slidein;
+        animation-iteration-count:inherit;
+    }
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+@media screen and (max-width:440px){
+    .cards {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:404px){
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid red;
+        padding: 1rem 0;
+        flex-direction: column;
+    }
+    .header__logo{
+        padding: 0.1rem;
+    }
+    .menu__link{
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.5rem;
+        border: 2px solid #fff;
+        transition: all 1s;
+    }
+}
+@media screen and (max-width:329px) {
+    .info {
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .menu {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;}
     }
 
 
