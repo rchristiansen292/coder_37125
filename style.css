@@ -30,8 +30,8 @@ header{
     border-bottom: 1px solid red;
     padding: 1rem 0;
 }
-header__img{
-    max-width: 10px;
+.header__img{
+    max-width: 100px;
 }
 
 .menu{
