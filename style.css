@@ -128,7 +128,7 @@ header{
           width: 100%;
         }
       }
-@media screen and (max-width:440px){
+@media screen and (max-width:442px){
     .cards {
         display: flex;
         gap: 2rem;
@@ -147,6 +147,7 @@ header{
     }
     .header__logo{
         padding: 0.1rem;
+        width:100%;
     }
     .menu__link{
         font-size: 1rem;
